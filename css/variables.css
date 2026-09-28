@@ -1,0 +1,71 @@
+/* variables.css */
+:root {
+    /* ============================================
+       COLORES — Basados en la identidad de AMÊ NACÊR
+       ============================================ */
+
+    /* Colores principales */
+    --color-lila: #8B7BAE;           /* Loto principal */
+    --color-lila-claro: #C4B8D4;     /* Pétalos claros */
+    --color-lila-oscuro: #6B5B8E;    /* Pétalos oscuros */
+    --color-azul-oscuro: #2E2E4A;    /* Buda y texto del logo */
+    --color-verde: #6BA368;          /* Hojas del loto */
+    --color-verde-oscuro: #4A7A48;   /* Verde más profundo */
+
+    /* Colores de fondo */
+    --color-crema: #F5EFE6;          /* Fondo general (papel) */
+    --color-crema-oscuro: #EDE4D6;   /* Fondo secundario */
+    --color-blanco: #FFFFFF;
+
+    /* Colores de acento */
+    --color-dorado: #C9A96E;         /* Detalles dorados */
+    --color-dorado-claro: #D4C4A8;   /* Dorado suave */
+    --color-terracota: #B8846A;      /* Acento cálido (opcional) */
+
+    /* Colores de texto */
+    --color-texto: #3D3D5C;          /* Texto principal (azul violáceo) */
+    --color-texto-suave: #6B6B85;    /* Texto secundario */
+
+    /* ============================================
+       TIPOGRAFÍAS
+       ============================================ */
+    --fuente-titulos: 'Cormorant Garamond', serif;
+    --fuente-cuerpo: 'Inter', sans-serif;
+    --fuente-botones: 'Montserrat', sans-serif;
+
+    /* ============================================
+       TAMAÑOS DE FUENTE
+       ============================================ */
+    --texto-xs: 0.75rem;
+    --texto-sm: 0.875rem;
+    --texto-base: 1rem;
+    --texto-lg: 1.125rem;
+    --texto-xl: 1.5rem;
+    --texto-2xl: 2rem;
+    --texto-3xl: 2.5rem;
+    --texto-4xl: 3.5rem;
+
+    /* ============================================
+       ESPACIADOS
+       ============================================ */
+    --espacio-xs: 0.5rem;
+    --espacio-sm: 1rem;
+    --espacio-md: 2rem;
+    --espacio-lg: 4rem;
+    --espacio-xl: 6rem;
+
+    /* ============================================
+       BORDES
+       ============================================ */
+    --radio-sm: 4px;
+    --radio-md: 8px;
+    --radio-lg: 16px;
+    --radio-full: 9999px;
+
+    /* ============================================
+       SOMBRAS
+       ============================================ */
+    --sombra-sm: 0 1px 3px rgba(46, 46, 74, 0.08);
+    --sombra-md: 0 4px 6px rgba(46, 46, 74, 0.1);
+    --sombra-lg: 0 10px 25px rgba(46, 46, 74, 0.15);
+}

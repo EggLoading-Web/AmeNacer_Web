@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMÊ NACÊR | Hongos adaptógenos para tu bienestar</title>
+    <meta name="description" content="Hongos adaptógenos y productos naturales para acompañar tu energía, tu calma y tu enfoque. Envíos a todo el país.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#2E2E4A">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- ============================================
+         1. HEADER
+         ============================================ -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.png" alt="AMÊ NACÊR" class="header__logo-img">
+            </a>
+            <nav class="header__nav" id="nav">
+                <ul class="header__menu">
+                    <li><a href="index.html" class="header__link header__link--active">Inicio</a></li>
+                    <li><a href="tienda.html" class="header__link">Tienda</a></li>
+                    <li><a href="ritual.html" class="header__link">Ritual</a></li>
+                    <li><a href="sobre-nosotros.html" class="header__link">Sobre Nosotros</a></li>
+                    <li><a href="blog.html" class="header__link">Blog</a></li>
+                    <li><a href="contacto.html" class="header__link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header__acciones">
+                <button class="header__carrito" id="carrito-btn" aria-label="Carrito de compras">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="header__carrito-contador" id="carrito-contador">0</span>
+                </button>
+                <button class="header__menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+         2. HERO SECTION
+         ============================================ -->
+    <section class="hero">
+        <div class="hero__contenido">
+            <h1 class="hero__titulo">
+                Nuevos hábitos,<br>
+                <span class="hero__titulo-destacado">salud consciente.</span>
+            </h1>
+            <p class="hero__subtitulo">Hongos adaptógenos puros para acompañar tu energía, tu calma y tu enfoque. Simple, natural y sin cafeína.</p>
+            <a href="tienda.html" class="btn btn--primario btn--grande">Quiero empezar</a>
+        </div>
+        <div class="hero__imagen">
+            <video autoplay muted loop playsinline preload="metadata" poster="img/hero.jpg" class="hero__video">
+                <source src="img/hero-video.mp4" type="video/mp4">
+            </video>
+            <span class="hero__imagen-overlay"></span>
+        </div>
+    </section>
+
+    <!-- ============================================
+         3. BARRA DE BENEFICIOS
+         ============================================ -->
+    <section class="beneficios">
+        <div class="container beneficios__grid">
+            <div class="beneficio">
+                <span class="beneficio__icono">🍄</span>
+                <h3 class="beneficio__titulo">Puros de verdad</h3>
+                <p class="beneficio__texto">Sin agregados, sin rellenos. Solo lo natural.</p>
+            </div>
+            <div class="beneficio">
+                <span class="beneficio__icono">⚡</span>
+                <h3 class="beneficio__titulo">Energía que se siente</h3>
+                <p class="beneficio__texto">Claridad mental sin nervios ni caídas.</p>
+            </div>
+            <div class="beneficio">
+                <span class="beneficio__icono">🧘</span>
+                <h3 class="beneficio__titulo">Tu momento de calma</h3>
+                <p class="beneficio__texto">Un respiro para vos, todos los días.</p>
+            </div>
+            <div class="beneficio">
+                <span class="beneficio__icono">📦</span>
+                <h3 class="beneficio__titulo">Llega a tu casa</h3>
+                <p class="beneficio__texto">De Las Rosas a todo el país.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         4. SECCIÓN HONGOS ADAPTÓGENOS
+         ============================================ -->
+    <section class="productos" id="productos">
+        <div class="container">
+            <div class="productos__encabezado">
+                <span class="productos__etiqueta">Hongos adaptógenos</span>
+                <h2 class="productos__titulo">Elegí el tuyo</h2>
+                <p class="productos__subtitulo">Seis hongos, un mismo propósito: acompañar tu bienestar de forma natural. Disponibles en cápsulas y en polvo.</p>
+            </div>
+
+            <div class="productos__grid">
+
+                <!-- Melena de León -->
+                <article class="producto-card">
+                    <div class="producto-card__imagen-wrapper">
+                        <img src="img/productos/melena-1.jpg" alt="Melena de León en cápsulas y polvo" class="producto-card__imagen">
+                        <span class="producto-card__badge">Más vendido</span>
+                    </div>
+                    <div class="producto-card__contenido">
+                        <h3 class="producto-card__nombre">Melena de León</h3>
+                        <p class="producto-card__beneficio">Tu mente, clara como el agua.</p>
+                        <p class="producto-card__descripcion">Para el foco, la memoria y la concentración.</p>
+                        <p class="producto-card__formatos">Cápsulas · Polvo</p>
+                        <div class="producto-card__footer">
+                            <span class="producto-card__precio">Desde $12.500</span>
+                            <button class="producto-card__btn" data-id="melena" data-nombre="Melena de León" data-precio="12500">Lo quiero</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Reishi -->
+                <article class="producto-card">
+                    <div class="producto-card__imagen-wrapper">
+                        <img src="img/productos/reishi-1.jpg" alt="Reishi en cápsulas y polvo" class="producto-card__imagen">
+                    </div>
+                    <div class="producto-card__contenido">
+                        <h3 class="producto-card__nombre">Reishi</h3>
+                        <p class="producto-card__beneficio">Bajá un cambio. Respirás mejor.</p>
+                        <p class="producto-card__descripcion">Para la calma, el descanso y el equilibrio.</p>
+                        <p class="producto-card__formatos">Cápsulas · Polvo</p>
+                        <div class="producto-card__footer">
+                            <span class="producto-card__precio">Desde $12.500</span>
+                            <button class="producto-card__btn" data-id="reishi" data-nombre="Reishi" data-precio="12500">Lo quiero</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cordyceps -->
+                <article class="producto-card">
+                    <div class="producto-card__imagen-wrapper">
+                        <img src="img/productos/cordyceps-1.jpg" alt="Cordyceps en cápsulas y polvo" class="producto-card__imagen">
+                    </div>
+                    <div class="producto-card__contenido">
+                        <h3 class="producto-card__nombre">Cordyceps</h3>
+                        <p class="producto-card__beneficio">Energía real, sin cafeína.</p>
+                        <p class="producto-card__descripcion">Para el rendimiento físico y la vitalidad.</p>
+                        <p class="producto-card__formatos">Cápsulas · Polvo</p>
+                        <div class="producto-card__footer">
+                            <span class="producto-card__precio">Desde $12.500</span>
+                            <button class="producto-card__btn" data-id="cordyceps" data-nombre="Cordyceps" data-precio="12500">Lo quiero</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tremella -->
+                <article class="producto-card">
+                    <div class="producto-card__imagen-wrapper">
+                        <img src="img/productos/tremella-1.jpg" alt="Tremella en cápsulas y polvo" class="producto-card__imagen">
+                        <span class="producto-card__badge producto-card__badge--nuevo">Nuevo</span>
+                    </div>
+                    <div class="producto-card__contenido">
+                        <h3 class="producto-card__nombre">Tremella</h3>
+                        <p class="producto-card__beneficio">Hidratación que se nota.</p>
+                        <p class="producto-card__descripcion">Para la piel, la belleza y la hidratación profunda.</p>
+                        <p class="producto-card__formatos">Cápsulas · Polvo</p>
+                        <div class="producto-card__footer">
+                            <span class="producto-card__precio">Desde $13.500</span>
+                            <button class="producto-card__btn" data-id="tremella" data-nombre="Tremella" data-precio="13500">Lo quiero</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Ashwagandha -->
+                <article class="producto-card">
+                    <div class="producto-card__imagen-wrapper">
+                        <img src="img/productos/ashwagandha-1.jpg" alt="Ashwagandha en cápsulas y polvo" class="producto-card__imagen">
+                    </div>
+                    <div class="producto-card__contenido">
+                        <h3 class="producto-card__nombre">Ashwagandha</h3>
+                        <p class="producto-card__beneficio">Tu aliado contra el estrés.</p>
+                        <p class="producto-card__descripcion">Para la calma mental y el equilibrio emocional.</p>
+                        <p class="producto-card__formatos">Cápsulas · Polvo</p>
+                        <div class="producto-card__footer">
+                            <span class="producto-card__precio">Desde $11.500</span>
+                            <button class="producto-card__btn" data-id="ashwagandha" data-nombre="Ashwagandha" data-precio="11500">Lo quiero</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Shitake -->
+                <article class="producto-card">
+                    <div class="producto-card__imagen-wrapper">
+                        <img src="img/productos/shitake-1.jpg" alt="Shitake en cápsulas y polvo" class="producto-card__imagen">
+                    </div>
+                    <div class="producto-card__contenido">
+                        <h3 class="producto-card__nombre">Shitake</h3>
+                        <p class="producto-card__beneficio">Defensas que se sienten.</p>
+                        <p class="producto-card__descripcion">Para el sistema inmune y la vitalidad.</p>
+                        <p class="producto-card__formatos">Cápsulas · Polvo</p>
+                        <div class="producto-card__footer">
+                            <span class="producto-card__precio">Desde $12.500</span>
+                            <button class="producto-card__btn" data-id="shitake" data-nombre="Shitake" data-precio="12500">Lo quiero</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         5. SECCIÓN PERFUMES ÁURICOS
+         ============================================ -->
+    <section class="productos productos--perfumes" id="perfumes">
+        <div class="container">
+            <div class="productos__encabezado">
+                <span class="productos__etiqueta">Perfumes Áuricos</span>
+                <h2 class="productos__titulo">Aromas que equilibran.</h2>
+                <p class="productos__subtitulo">Perfumes sutiles con Flores de Bach para acompañar tus emociones. Aplicá en puntos de pulso y respirá profundo.</p>
+            </div>
+
+            <div class="productos__grid">
+
+                <!-- Perfume Protección -->
+                <article class="producto-card" data-categorias="perfumes">
+                    <div class="producto-card__imagen-wrapper">
+                        <video autoplay muted loop playsinline preload="metadata" poster="img/productos/perfume-1.jpg" class="producto-card__video">
+                            <source src="img/productos/perfume-1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="producto-card__contenido">
+                        <h3 class="producto-card__nombre">Protección</h3>
+                        <p class="producto-card__beneficio">Escudo para tu energía.</p>
+                        <p class="producto-card__descripcion">Con Flores de Bach para acompañar los momentos de exposición.</p>
+                        <p class="producto-card__formatos">Roll-on 10 ml</p>
+                        <div class="producto-card__footer">
+                            <span class="producto-card__precio">$8.500</span>
+                            <button class="producto-card__btn" data-id="perfume-1" data-nombre="Perfume Protección" data-precio="8500" data-imagen="img/productos/perfume-1.jpg">Lo quiero</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Perfume Abundancia -->
+                <article class="producto-card" data-categorias="perfumes">
+                    <div class="producto-card__imagen-wrapper">
+                        <video autoplay muted loop playsinline preload="metadata" poster="img/productos/perfume-2.jpg" class="producto-card__video">
+                            <source src="img/productos/perfume-2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="producto-card__contenido">
+                        <h3 class="producto-card__nombre">Abundancia</h3>
+                        <p class="producto-card__beneficio">Abrí la puerta a lo bueno.</p>
+                        <p class="producto-card__descripcion">Para acompañar la confianza y la prosperidad.</p>
+                        <p class="producto-card__formatos">Roll-on 10 ml</p>
+                        <div class="producto-card__footer">
+                            <span class="producto-card__precio">$8.500</span>
+                            <button class="producto-card__btn" data-id="perfume-2" data-nombre="Perfume Abundancia" data-precio="8500" data-imagen="img/productos/perfume-2.jpg">Lo quiero</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Perfume Energía -->
+                <article class="producto-card" data-categorias="perfumes">
+                    <div class="producto-card__imagen-wrapper">
+                        <video autoplay muted loop playsinline preload="metadata" poster="img/productos/perfume-3.jpg" class="producto-card__video">
+                            <source src="img/productos/perfume-3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="producto-card__contenido">
+                        <h3 class="producto-card__nombre">Energía</h3>
+                        <p class="producto-card__beneficio">Vitalidad que se respira.</p>
+                        <p class="producto-card__descripcion">Para los días que necesitás un impulso extra.</p>
+                        <p class="producto-card__formatos">Roll-on 10 ml</p>
+                        <div class="producto-card__footer">
+                            <span class="producto-card__precio">$8.500</span>
+                            <button class="producto-card__btn" data-id="perfume-3" data-nombre="Perfume Energía" data-precio="8500" data-imagen="img/productos/perfume-3.jpg">Lo quiero</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Perfume Amor -->
+                <article class="producto-card" data-categorias="perfumes">
+                    <div class="producto-card__imagen-wrapper">
+                        <video autoplay muted loop playsinline preload="metadata" poster="img/productos/perfume-4.jpg" class="producto-card__video">
+                            <source src="img/productos/perfume-4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="producto-card__contenido">
+                        <h3 class="producto-card__nombre">Amor</h3>
+                        <p class="producto-card__beneficio">Abrí tu corazón.</p>
+                        <p class="producto-card__descripcion">Para acompañar los vínculos y la conexión emocional.</p>
+                        <p class="producto-card__formatos">Roll-on 10 ml</p>
+                        <div class="producto-card__footer">
+                            <span class="producto-card__precio">$8.500</span>
+                            <button class="producto-card__btn" data-id="perfume-4" data-nombre="Perfume Amor" data-precio="8500" data-imagen="img/productos/perfume-4.jpg">Lo quiero</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Perfume Calma -->
+                <article class="producto-card" data-categorias="perfumes">
+                    <div class="producto-card__imagen-wrapper">
+                        <video autoplay muted loop playsinline preload="metadata" poster="img/productos/perfume-5.jpg" class="producto-card__video">
+                            <source src="img/productos/perfume-5.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="producto-card__contenido">
+                        <h3 class="producto-card__nombre">Calma</h3>
+                        <p class="producto-card__beneficio">Para soltar y respirar.</p>
+                        <p class="producto-card__descripcion">Con Flores de Bach para acompañar los momentos de estrés.</p>
+                        <p class="producto-card__formatos">Roll-on 10 ml</p>
+                        <div class="producto-card__footer">
+                            <span class="producto-card__precio">$8.500</span>
+                            <button class="producto-card__btn" data-id="perfume-5" data-nombre="Perfume Calma" data-precio="8500" data-imagen="img/productos/perfume-5.jpg">Lo quiero</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         6. SECCIÓN EDUCATIVA
+         ============================================ -->
+    <section class="educativa" id="educativa">
+        <div class="container educativa__grid">
+
+            <div class="educativa__imagen">
+                <video autoplay muted loop playsinline preload="metadata" poster="img/hongos.jpg" class="educativa__video">
+                    <source src="img/hongos-video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="educativa__contenido">
+                <span class="educativa__etiqueta">Sabías que...</span>
+                <h2 class="educativa__titulo">La naturaleza ya sabía cómo ayudarte.</h2>
+                <p class="educativa__texto">
+                    Los hongos adaptógenos se usan desde hace siglos en la medicina tradicional oriental. No son estimulantes ni sedantes: actúan de forma suave y sostenida, ayudándote a adaptarte al ritmo de cada día.
+                </p>
+                <p class="educativa__texto">
+                    Se llaman "adaptógenos" porque acompañan al cuerpo a mantener el equilibrio frente al estrés. No generan picos de energía ni dependencia. Simplemente trabajan con vos.
+                </p>
+                <p class="educativa__texto">
+                    En <strong>AMÊ NACÊR</strong> los elegimos por su pureza, su origen y su capacidad de integrarse a tu rutina sin esfuerzo. Sin complicaciones. Sin promesas mágicas. Solo bienestar real.
+                </p>
+
+                <ul class="educativa__lista">
+                    <li class="educativa__lista-item">
+                        <span class="educativa__lista-icono">✓</span>
+                        <span>100% natural, sin agregados</span>
+                    </li>
+                    <li class="educativa__lista-item">
+                        <span class="educativa__lista-icono">✓</span>
+                        <span>Aptos para veganos</span>
+                    </li>
+                    <li class="educativa__lista-item">
+                        <span class="educativa__lista-icono">✓</span>
+                        <span>Sin cafeína ni estimulantes</span>
+                    </li>
+                </ul>
+
+                <a href="sobre-nosotros.html" class="btn btn--outline">Conocer más</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================
+         7. RITUAL EN 4 PASOS
+         ============================================ -->
+    <section class="ritual" id="ritual">
+        <div class="container">
+            <div class="ritual__encabezado">
+                <span class="ritual__etiqueta">Tu ritual diario</span>
+                <h2 class="ritual__titulo">Tan simple como respirar.</h2>
+                <p class="ritual__subtitulo">Elegí el formato que mejor se adapte a vos. Cápsulas o polvo, el bienestar es el mismo.</p>
+            </div>
+
+            <!-- Dos formatos -->
+            <div class="ritual__formatos">
+                <div class="formato">
+                    <span class="formato__icono">💊</span>
+                    <h3 class="formato__titulo">Cápsulas</h3>
+                    <p class="formato__texto">Prácticas, sin sabor y fáciles de llevar. Ideal si estás siempre en movimiento.</p>
+                </div>
+                <div class="formato">
+                    <span class="formato__icono">🥄</span>
+                    <h3 class="formato__titulo">Polvo</h3>
+                    <p class="formato__texto">Versátil y rendidor. Se mezcla con cualquier bebida y no cambia el sabor.</p>
+                </div>
+            </div>
+
+            <!-- Pasos -->
+            <div class="ritual__grid">
+
+                <div class="paso">
+                    <div class="paso__circulo">
+                        <span class="paso__numero">01</span>
+                    </div>
+                    <h3 class="paso__titulo">Elegí tu producto</h3>
+                    <p class="paso__texto">¿Energía, calma, foco o belleza? Vos decidís por dónde empezar.</p>
+                </div>
+
+                <div class="paso">
+                    <div class="paso__circulo">
+                        <span class="paso__numero">02</span>
+                    </div>
+                    <h3 class="paso__titulo">Elegí tu formato</h3>
+                    <p class="paso__texto">Cápsulas para la practicidad, polvo para mezclar. Los dos funcionan igual.</p>
+                </div>
+
+                <div class="paso">
+                    <div class="paso__circulo">
+                        <span class="paso__numero">03</span>
+                    </div>
+                    <h3 class="paso__titulo">Sumalo a tu día</h3>
+                    <p class="paso__texto">Una cápsula o una cucharada. Antes del café, después del almuerzo, cuando quieras.</p>
+                </div>
+
+                <div class="paso">
+                    <div class="paso__circulo">
+                        <span class="paso__numero">04</span>
+                    </div>
+                    <h3 class="paso__titulo">Sentí la diferencia</h3>
+                    <p class="paso__texto">Un hábito pequeño. Un cambio grande. Todos los días.</p>
+                </div>
+
+            </div>
+
+            <div class="ritual__cta">
+                <a href="ritual.html" class="btn btn--primario btn--grande">Ver la guía completa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         8. TESTIMONIOS
+         ============================================ -->
+    <section class="testimonios">
+        <div class="container">
+            <div class="testimonios__encabezado">
+                <span class="testimonios__etiqueta">Testimonios</span>
+                <h2 class="testimonios__titulo">Ellos ya empezaron. ¿Y vos?</h2>
+                <p class="testimonios__subtitulo">Historias reales de personas que incorporaron AMÊ NACÊR a su día a día.</p>
+            </div>
+
+            <div class="testimonios__grid">
+
+                <blockquote class="testimonio">
+                    <div class="testimonio__estrellas">★★★★★</div>
+                    <p class="testimonio__texto">"Empecé con Melena de León en cápsulas para estudiar y noté la diferencia en mi concentración. Ahora es parte de mi mañana."</p>
+                    <footer class="testimonio__footer">
+                        <div class="testimonio__avatar">S</div>
+                        <div class="testimonio__info">
+                            <cite class="testimonio__autor">Sofía</cite>
+                            <span class="testimonio__lugar">Rosario, Santa Fe</span>
+                        </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonio">
+                    <div class="testimonio__estrellas">★★★★★</div>
+                    <p class="testimonio__texto">"El Reishi en polvo me ayuda a bajar un cambio después del trabajo. Lo tomo con té antes de dormir y descanso mucho mejor."</p>
+                    <footer class="testimonio__footer">
+                        <div class="testimonio__avatar">M</div>
+                        <div class="testimonio__info">
+                            <cite class="testimonio__autor">Martín</cite>
+                            <span class="testimonio__lugar">Buenos Aires</span>
+                        </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonio">
+                    <div class="testimonio__estrellas">★★★★★</div>
+                    <p class="testimonio__texto">"Uso el Cordyceps antes de entrenar. Me siento con más energía y sin esa caída que me daba el café. Lo recomiendo."</p>
+                    <footer class="testimonio__footer">
+                        <div class="testimonio__avatar">L</div>
+                        <div class="testimonio__info">
+                            <cite class="testimonio__autor">Lucía</cite>
+                            <span class="testimonio__lugar">Córdoba</span>
+                        </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonio">
+                    <div class="testimonio__estrellas">★★★★★</div>
+                    <p class="testimonio__texto">"La Tremella me cambió la piel. La noto más hidratada y luminosa. La tomo todas las mañanas en el smoothie."</p>
+                    <footer class="testimonio__footer">
+                        <div class="testimonio__avatar">C</div>
+                        <div class="testimonio__info">
+                            <cite class="testimonio__autor">Camila</cite>
+                            <span class="testimonio__lugar">Santa Fe</span>
+                        </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonio">
+                    <div class="testimonio__estrellas">★★★★★</div>
+                    <p class="testimonio__texto">"La Ashwagandha me ayudó un montón con la ansiedad. Me siento más tranquila y enfocada. El polvo no tiene sabor, ideal."</p>
+                    <footer class="testimonio__footer">
+                        <div class="testimonio__avatar">V</div>
+                        <div class="testimonio__info">
+                            <cite class="testimonio__autor">Valentina</cite>
+                            <span class="testimonio__lugar">Rosario, Santa Fe</span>
+                        </div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonio">
+                    <div class="testimonio__estrellas">★★★★★</div>
+                    <p class="testimonio__texto">"El Perfume Áurico Calma se volvió parte de mi ritual de noche. Lo aplico en las muñecas y respiro profundo. Otro nivel."</p>
+                    <footer class="testimonio__footer">
+                        <div class="testimonio__avatar">J</div>
+                        <div class="testimonio__info">
+                            <cite class="testimonio__autor">Julián</cite>
+                            <span class="testimonio__lugar">Las Rosas, Santa Fe</span>
+                        </div>
+                    </footer>
+                </blockquote>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         9. FEED DE INSTAGRAM
+         ============================================ -->
+    <section class="instagram" id="instagram">
+        <div class="container">
+            <div class="instagram__encabezado">
+                <span class="instagram__etiqueta">Comunidad</span>
+                <h2 class="instagram__titulo">Sumate a nuestro día a día.</h2>
+                <p class="instagram__subtitulo">Seguinos en <a href="https://instagram.com/ame.nacer" target="_blank" rel="noopener">@ame.nacer</a> y descubrí recetas, rituales y novedades.</p>
+            </div>
+
+            <div class="instagram__grid">
+
+                <a href="https://instagram.com/ame.nacer" target="_blank" rel="noopener" class="instagram__post">
+                    <img src="img/instagram/post-1.jpg" alt="Publicación de Instagram de AMÊ NACÊR" loading="lazy">
+                    <span class="instagram__overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+                </a>
+
+                <a href="https://instagram.com/ame.nacer" target="_blank" rel="noopener" class="instagram__post">
+                    <img src="img/instagram/post-2.jpg" alt="Publicación de Instagram de AMÊ NACÊR" loading="lazy">
+                    <span class="instagram__overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+                </a>
+
+                <a href="https://instagram.com/ame.nacer" target="_blank" rel="noopener" class="instagram__post">
+                    <img src="img/instagram/post-3.jpg" alt="Publicación de Instagram de AMÊ NACÊR" loading="lazy">
+                    <span class="instagram__overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+                </a>
+
+                <a href="https://instagram.com/ame.nacer" target="_blank" rel="noopener" class="instagram__post">
+                    <img src="img/instagram/post-4.jpg" alt="Publicación de Instagram de AMÊ NACÊR" loading="lazy">
+                    <span class="instagram__overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+                </a>
+
+                <a href="https://instagram.com/ame.nacer" target="_blank" rel="noopener" class="instagram__post">
+                    <img src="img/instagram/post-5.jpg" alt="Publicación de Instagram de AMÊ NACÊR" loading="lazy">
+                    <span class="instagram__overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+                </a>
+
+                <a href="https://instagram.com/ame.nacer" target="_blank" rel="noopener" class="instagram__post">
+                    <img src="img/instagram/post-6.jpg" alt="Publicación de Instagram de AMÊ NACÊR" loading="lazy">
+                    <span class="instagram__overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="instagram__cta">
+                <a href="https://instagram.com/ame.nacer" target="_blank" rel="noopener" class="btn btn--outline">
+                    Ver perfil completo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         10. CTA FINAL
+         ============================================ -->
+    <section class="cta-final">
+        <div class="cta-final__decoracion cta-final__decoracion--izquierda"></div>
+        <div class="cta-final__decoracion cta-final__decoracion--derecha"></div>
+
+        <div class="container cta-final__contenido">
+            <span class="cta-final__etiqueta">Empezá hoy</span>
+            <h2 class="cta-final__titulo">Tu bienestar empieza hoy.</h2>
+            <p class="cta-final__subtitulo">
+                Elegí tu producto, probá una semana y sentí la diferencia. Sin riesgos, sin complicaciones.
+            </p>
+
+            <div class="cta-final__acciones">
+                <a href="tienda.html" class="btn btn--primario btn--grande">Ir a la tienda</a>
+                <a href="https://instagram.com/ame.nacer" target="_blank" rel="noopener" class="btn btn--outline-claro btn--grande">Escribinos por Instagram</a>
+            </div>
+
+            <div class="cta-final__beneficios">
+                <div class="cta-final__beneficio">
+                    <span class="cta-final__beneficio-icono">🚚</span>
+                    <span>Envíos a todo el país</span>
+                </div>
+                <div class="cta-final__beneficio">
+                    <span class="cta-final__beneficio-icono">🔒</span>
+                    <span>Pago seguro</span>
+                </div>
+                <div class="cta-final__beneficio">
+                    <span class="cta-final__beneficio-icono">🌱</span>
+                    <span>100% natural</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         11. FOOTER
+         ============================================ -->
+    <footer class="footer" id="footer">
+        <div class="container footer__grid">
+
+            <!-- Columna 1: Marca -->
+            <div class="footer__col footer__col--marca">
+                <img src="img/logo.png" alt="AMÊ NACÊR" class="footer__logo">
+                <p class="footer__descripcion">
+                    Nuevos hábitos, salud consciente. Hongos adaptógenos y productos naturales para acompañar tu bienestar.
+                </p>
+                <div class="footer__redes">
+                    <a href="https://instagram.com/ame.nacer" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/5493471501214" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:hola@amenacer.com.ar" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Tienda -->
+            <div class="footer__col">
+                <h3 class="footer__titulo">Hongos</h3>
+                <ul class="footer__lista">
+                    <li><a href="tienda.html">Melena de León</a></li>
+                    <li><a href="tienda.html">Reishi</a></li>
+                    <li><a href="tienda.html">Cordyceps</a></li>
+                    <li><a href="tienda.html">Tremella</a></li>
+                    <li><a href="tienda.html">Ashwagandha</a></li>
+                    <li><a href="tienda.html">Shitake</a></li>
+                </ul>
+
+                <h3 class="footer__titulo footer__titulo--mt">Perfumes Áuricos</h3>
+                <ul class="footer__lista">
+                    <li><a href="tienda.html">Protección</a></li>
+                    <li><a href="tienda.html">Abundancia</a></li>
+                    <li><a href="tienda.html">Energía</a></li>
+                    <li><a href="tienda.html">Amor</a></li>
+                    <li><a href="tienda.html">Calma</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Información -->
+            <div class="footer__col">
+                <h3 class="footer__titulo">Información</h3>
+                <ul class="footer__lista">
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="ritual.html">Ritual</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Envíos y devoluciones</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Contacto -->
+            <div class="footer__col">
+                <h3 class="footer__titulo">Contacto</h3>
+                <ul class="footer__lista footer__lista--contacto">
+                    <li>
+                        <span class="footer__icono">📍</span>
+                        <span>Las Rosas, Santa Fe, Argentina</span>
+                    </li>
+                    <li>
+                        <span class="footer__icono">📧</span>
+                        <a href="mailto:hola@amenacer.com.ar">hola@amenacer.com.ar</a>
+                    </li>
+                    <li>
+                        <span class="footer__icono">📱</span>
+                        <a href="https://wa.me/5493471501214" target="_blank" rel="noopener">+54 9 3471 501214</a>
+                    </li>
+                    <li>
+                        <span class="footer__icono">🕐</span>
+                        <span>Lun a Vie, 9 a 18 hs</span>
+                    </li>
+                </ul>
+
+                <h3 class="footer__titulo footer__titulo--mt">Medios de pago</h3>
+                <div class="footer__pagos">
+                    <span class="footer__pago">Mercado Pago</span>
+                    <span class="footer__pago">Visa</span>
+                    <span class="footer__pago">Mastercard</span>
+                    <span class="footer__pago">Transferencia</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Aviso legal -->
+        <div class="container">
+            <div class="footer__legal">
+                <p class="footer__legal-texto">
+                    Los productos de <strong>AMÊ NACÊR</strong> son suplementos dietarios y productos naturales. No son medicamentos y no reemplazan una dieta equilibrada ni un estilo de vida saludable. Consultá a un profesional de la salud antes de incorporar cualquier suplemento. Registros RNE y RNPA vigentes.
+                </p>
+                <p class="footer__copyright">
+                    &copy; 2025 AMÊ NACÊR. Todos los derechos reservados. Hecho con 🌿 en Las Rosas, Santa Fe.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         12. CARRITO LATERAL (DRAWER)
+         ============================================ -->
+    <div class="carrito-overlay" id="carrito-overlay"></div>
+
+    <aside class="carrito-drawer" id="carrito-drawer" aria-hidden="true">
+        <div class="carrito-drawer__header">
+            <h2 class="carrito-drawer__titulo">Tu carrito</h2>
+            <button class="carrito-drawer__cerrar" id="carrito-cerrar" aria-label="Cerrar carrito">&times;</button>
+        </div>
+
+        <div class="carrito-drawer__contenido" id="carrito-contenido">
+            <!-- Los items se cargan dinámicamente desde JS -->
+        </div>
+
+        <div class="carrito-drawer__footer carrito-drawer__footer--oculto" id="carrito-footer">
+            <div class="carrito-drawer__total">
+                <span>Total:</span>
+                <span id="carrito-total">$0</span>
+            </div>
+            <button class="btn btn--whatsapp btn--grande carrito-drawer__checkout" id="carrito-checkout">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 8px;">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Finalizar compra por WhatsApp
+            </button>
+            <p class="carrito-drawer__nota">Coordinamos el pago y el envío por chat.</p>
+        </div>
+    </aside>
+
+    <!-- ============================================
+         13. BOTONES FLOTANTES
+         ============================================ -->
+    <a href="https://wa.me/5493471501214?text=Hola%20AMÊ%20NACÊR!%20Quiero%20hacer%20una%20consulta."
+       class="whatsapp-btn"
+       target="_blank"
+       rel="noopener"
+       aria-label="Escribinos por WhatsApp">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- ============================================
+         14. SCRIPTS
+         ============================================ -->
+    <script src="js/menu.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/interactividad.js"></script>
+</body>
+</html>
