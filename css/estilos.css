@@ -4096,3 +4096,26 @@ img {
         font-size: var(--texto-xl);
     }
 }
+/* ============================================
+   CRÉDITOS WEB
+   ============================================ */
+.footer__creditos {
+    font-size: var(--texto-xs);
+    color: var(--color-crema);
+    opacity: 0.5;
+    text-align: center;
+    margin-top: var(--espacio-xs);
+}
+
+.footer__creditos a {
+    color: var(--color-crema);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.footer__creditos a:hover {
+    color: var(--color-lila-claro);
+    text-decoration: underline;
+    opacity: 1;
+}
